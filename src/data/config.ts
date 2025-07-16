@@ -1,9 +1,9 @@
 const config = {
-  title: "Abhijit Zende | DevOps Enthusiast",
+  title: "Tarun Goel | AI/ML & Frontend Developer ",
   description: {
-    long: "Explore the portfolio of Abhijit, a Computer Science Engineer with 1.5 year experience in Devlopment, DevOps & Database management with hands-on experience in deploying & automating workflows, & collaborating with foreign clients. Strong analytical skills, effective communication, and a team-oriented approach to driving process improvements and delivering results.",
+    long: "Explore the portfolio of Tarun Goel, an AI/ML Developer and Computer Vision enthusiast with hands-on experience in building real-world machine learning solutions. Skilled in NLP, YOLOv5, and model deployment, Tarun has led multiple projects, organized workshops, and collaborated with academic and industry mentors. Known for strong problem-solving skills, creative thinking, and a team-oriented mindset.",
     short:
-      "Discover the portfolio of Abhijit, a DevOps enthusiast solving real life problems in DevOps and Development.",
+      "Discover the portfolio of Tarun Goel, an AI/ML enthusiast solving real-world problems through machine learning, computer vision, and natural language processing.",
   },
   keywords: [
     "Abhijit",
@@ -30,19 +30,19 @@ const config = {
     "AIOps",
     "Azure",
   ],
-  author: "Abhijit Zende",
-  email: "abhijitzende75@gmail.com",
+  author: "Tarun Goel",
+  email: "goeltarun15@gmail.com",
   site: "https://abhijitzende.com",
 
   get ogImg() {
     return this.site + "/assets/seo/og-image.png";
   },
   social: {
-    twitter: "https://x.com/_Abhi_Speaks/",
-    linkedin: "https://www.linkedin.com/in/zende-abhijit/",
-    instagram: "https://www.instagram.com/_.celestial_abhi._/",
-    facebook: "https://www.facebook.com/profile.php?id=100010029821759",
-    github: "https://github.com/Abhiz2411/",
+    twitter: "https://x.com/TarunGoel389593",
+    linkedin: "https://www.linkedin.com/in/tarun-goel-43a2b4287/",
+    instagram: "https://www.instagram.com/tarun_13_11/",
+    facebook: "",
+    github: "https://github.com/TarunGoel93",
   },
 };
 export { config };

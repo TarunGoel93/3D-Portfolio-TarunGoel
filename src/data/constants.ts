@@ -4,9 +4,11 @@ export enum SkillNames {
   // AZURE = "azure",    // +
   LINUX = "linux",    
   // SHELL = "shell",    // +
-  // PYTHON = "python",  // +
+  PYTHON = "python",  // +
   GIT = "git",
   DOCKER = "docker",
+  FLASK = "flask",
+  SCIKIT = "scikit",
   // SELENIUM = "selenium",  // +
   // JENKINS = "jenkins",    // +
   // KUBERNETES = "kubernetes",  // +
@@ -249,6 +251,31 @@ using use = useUsing("use")`,
     color: "#6cc24a",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vercel/vercel-original.svg",
   },
+  [SkillNames.PYTHON]: {
+  id: 25,
+  name: "python",
+  label: "Python",
+  shortDescription: "the OG flex of programming 🐍🔥",
+  color: "#3572A5",
+  icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+},
+[SkillNames.FLASK]: {
+  id: 26,
+  name: "flask",
+  label: "Flask",
+  shortDescription: "the micro king of backends 👑🍼",
+  color: "#000000",
+  icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg",
+},
+[SkillNames.SCIKIT]: {
+  id: 27,
+  name: "scikit",
+  label: "Scikit-learn",
+  shortDescription: "machine learning made breezy 🤖📈",
+  color: "#f7931e",
+  icon: "https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg",
+},
+
 };
 
 

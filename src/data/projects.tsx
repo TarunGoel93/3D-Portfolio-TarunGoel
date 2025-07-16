@@ -771,24 +771,21 @@ const projects: Project[] = [
   // +
   { // 01. AI Docker file optimizer project
     id: "aidockerfileoptimizer",
-    category: "AI and DevOps",
-    title: "AI Dockerfile Optimizer",
-    src: "/assets/projects-screenshots/aidockerfileoptimizer/2.png",
+    category: "AI and NLP",
+    title: "CommentLens: AI-Powered Sentiment Analysis for Social Media",
+    src: "/assets/projects-screenshots/aidockerfileoptimizer/1.png",
     screenshots: ["1.png", "2.png", "3.png"],
-    live: "https://ai-docker-file-optimizer.netlify.app/",
-    github:"https://github.com/Abhiz2411/AI-Docker-file-optimizer",
+    live: "https://drive.google.com/file/d/1fe8CXZYJ7KfabFp0o7GVDUXa4ZRQFF9R/view?usp=sharing",
+    github:"https://github.com/TarunGoel93/Commentlens",
     skills: {
-      frontend: [PROJECT_SKILLS.js, PROJECT_SKILLS.next, PROJECT_SKILLS.tailwind, PROJECT_SKILLS.vite],
-      backend: [PROJECT_SKILLS.openai,PROJECT_SKILLS.netlify],
+      frontend: [PROJECT_SKILLS.js, PROJECT_SKILLS.next, PROJECT_SKILLS.tailwind, PROJECT_SKILLS.html, PROJECT_SKILLS.css],
+      backend: [PROJECT_SKILLS.python,PROJECT_SKILLS.postgres,PROJECT_SKILLS.firebase],
     },
     get content() {
       return (
         <div>
           <TypographyP className="font-mono ">
-            AI-Docker-file-optimizer helps optimize Dockerfiles for smaller, more efficient images. 
-            Simply paste your Dockerfile, and the app analyzes it for best practices and size 
-            optimization tips. It then provides a refactored, optimized version of the Dockerfile. 
-            Deployed on Vercel, it ensures fast and easy access to Dockerfile optimization.
+            CommentLens is a machine learning-based application that analyzes YouTube and Reddit comments in real time. Developed using Flask, NLP, and Scikit-learn, it provides content creators with actionable insights, identifies abusive or spam content, and visualizes audience sentiment to enhance engagement and content strategy.
           </TypographyP>
           <ProjectsLinks live={this.live} repo={this.github} />
           <SlideShow
@@ -804,8 +801,8 @@ const projects: Project[] = [
   },
   { // 02. FinanceMe project
     id: "financeme",
-    category: "DevOps in Banking and Finance",
-    title: "FinanceMe: Complete DevOps Capstone Project",
+    category: "Workshops & Web Development",
+    title: "TechSphere Workshop Website: GitHub & Kaggle Training",
     src: "/assets/projects-screenshots/financeme/1.png",
     screenshots: ["/assets/projects-screenshots/financeme/1.png"],
     skills: {
@@ -821,143 +818,72 @@ const projects: Project[] = [
         PROJECT_SKILLS.postgres,
       ],
     },
-    live: "https://github.com/Abhiz2411/FinanceMe-Devops-Project-01",
-    github: "https://github.com/Abhiz2411/FinanceMe-Devops-Project-01",
+    live: "https://tarungoel93.github.io/Work/index.html",
+    github: "https://github.com/TarunGoel93/Work",
     get content() {
       return (
         <div>
           <TypographyP className="font-mono text-2xl text-center">
-            FinanceMe: Complete DevOps Capstone Project
+            TechSphere Workshop: GitHub & Kaggle Essentials
           </TypographyP>
           <TypographyP className="font-mono ">
-            This project demonstrates the deployment of a DevOps pipeline for a global banking and
-            financial services provider, FinanceMe. The company transitioned from a monolithic 
-            architecture to a microservice-based architecture to handle increased traffic and 
-            scaling challenges. The project involves automating infrastructure provisioning, build 
-            and deployment processes, and continuous monitoring using modern DevOps tools and 
-            AWS services.?
+            Developed and organized a hands-on workshop website for a college event focused on GitHub and Kaggle. The site provided participants with schedules, resources, and project submission guidelines. Served as both the event organizer and resource person, leading sessions on version control and machine learning competitions.
           </TypographyP>
           <ProjectsLinks live={this.live} repo={this.github} />
-          <TypographyH3 className="my-4 mt-8">Architecture </TypographyH3>
-          <p className="font-mono mb-2">
-            The project is divided into three main phases:
-            1.Automating Infrastructure Provisioning
-            2.Build and Deployment Automation
-            3.Continuous Monitoring
-          </p>
+  
           <SlideShow
             images={[
               `${BASE_PATH}/financeme/1.png`,
               `${BASE_PATH}/financeme/2.png`,
+              `${BASE_PATH}/financeme/3.png`,
             ]}
           />
-          <TypographyH3 className="my-4 mt-8">Automating Infrastructure Provisioning</TypographyH3>
-          <p className="font-mono mb-2">
-          Terraform is used to create 4 AWS EC2 instances:
-            Jenkins Master Node (for CI/CD pipeline management)
-            Build Server (for application and Docker image builds)
-            Production Server (for deploying Dockerized applications)
-            Monitoring Server (for continuous monitoring of Build and Prod servers)
-          </p>
-          <SlideShow
-            images={[
-              `${BASE_PATH}/financeme/4_A.png`,
-              `${BASE_PATH}/financeme/4.png`,
-            ]}
-          />
-          <TypographyH3 className="my-4 mt-8">Build and Deployment Automation</TypographyH3>
-
-          <p className="font-mono mb-2">
-          Jenkins is configured for a CI/CD pipeline:
-            Jenkins Master Node is responsible for pipeline orchestration.
-            Build Server is configured as a Jenkins Slave Node to handle application builds and Docker image creation.
-            Ansible is used for automating deployment to the Prod server, where the application is deployed using an Ansible client-server model.
-          </p>
-          <SlideShow
-            images={[
-              `${BASE_PATH}/financeme/5.png`,
-              `${BASE_PATH}/financeme/6.png`,
-              `${BASE_PATH}/financeme/7.png`,
-            ]}
-          />
-          <TypographyH3 className="my-4 mt-8">Continuous Monitoring </TypographyH3>
-          <p className="font-mono mb-2">
-          Prometheus and Grafana are used for real-time monitoring:
-            Node Exporter is installed on both Build and Prod servers to collect server metrics (CPU, Disk Space, Memory Utilization).
-            Grafana Dashboard is created to visualize these metrics for continuous monitoring.
-          </p>
-          <SlideShow images={[
-                `${BASE_PATH}/financeme/3.png`,
-                `${BASE_PATH}/financeme/8.png`,
-                `${BASE_PATH}/financeme/9.png`,
-                `${BASE_PATH}/financeme/10.png`,
-            ]} />
+   
         </div>
       );
     },
   },
   { // 03. Portfolio project
     id: "portfolio",
-    category: "Portfolio",
-    title: "My Portfolio",
-    src: "/assets/projects-screenshots/myportfolio/landing.png",
-    screenshots: ["assets/projects-screenshots/myportfolio/landing.png"],
-    live: "https://www.abhijitzende.com/",
+    category: "Frontend",
+    title: "PlacePrep: Placement Readiness Platform for Students",
+    src: "/assets/projects-screenshots/myportfolio/1.png",
+    screenshots: ["assets/projects-screenshots/myportfolio/2.png"],
+    live: "https://placeprep-e90l.onrender.com/tiers",
     github:"https://github.com/Abhiz2411/3D-interactive-portfolio",
     skills: {
       frontend: [
-        PROJECT_SKILLS.ts,
+        PROJECT_SKILLS.html,
         PROJECT_SKILLS.next,
-        PROJECT_SKILLS.shadcn,
+        PROJECT_SKILLS.css,
         PROJECT_SKILLS.aceternity,
         PROJECT_SKILLS.framerMotion,
         PROJECT_SKILLS.tailwind,
-        PROJECT_SKILLS.spline,
+        PROJECT_SKILLS.js,
       ],
-      backend: [],
+      backend: [PROJECT_SKILLS.postgres,],
     },
     get content() {
       return (
         <div>
           <TypographyP className="font-mono ">
-            Welcome to my digital playground, where creativity meets code in the
-            dopest way possible.
+            Welcome to PlacePrep — a platform where career preparation meets clarity. Designed to help students navigate company expectations, eligibility, and placement strategies across all tiers.
           </TypographyP>
           <ProjectsLinks live={this.live} repo={this.github} />
           <TypographyH3 className="my-4 mt-8">
             Beautiful 3D Objects{" "}
           </TypographyH3>
           <p className="font-mono mb-2">
-            Did you see that 3D keyboard modal? Yeah! I made that. That
-            interactive keyboard is being rendered in 3D on a webpage 🤯, and
-            pressing each keycap reveals a skill in a goofy way. It&apos;s like
-            typing, but make it art.
+            PlacePrep is a web platform designed to guide engineering students through company-specific placement preparation. It categorizes companies into three tiers based on salary packages and provides details such as eligibility criteria, recruitment process, and key topics to prepare. The goal is to help students understand what to expect from different companies and prepare effectively for interviews.
           </p>
           <SlideShow
             images={[
-              `${BASE_PATH}/myportfolio/landing.png`,
-              `${BASE_PATH}/portfolio/skills.png`,
+              `${BASE_PATH}/myportfolio/3.png`,
+              `${BASE_PATH}/myportfolio/4.png`,
+              `${BASE_PATH}/myportfolio/5.png`,
             ]}
           />
-          <TypographyH3 className="my-4 ">Space Theme</TypographyH3>
-          <p className="font-mono mb-2">
-            Dark background + floating particles = out-of-this-world cool.
-          </p>
-          <SlideShow images={[`${BASE_PATH}/myportfolio/navbar.png`]} />
-          <TypographyH3 className="my-4 mt-8">Projects</TypographyH3>
-
-          <p className="font-mono mb-2">
-            My top personal and freelance projects — no filler, all killer.
-          </p>
-          <SlideShow
-            images={[
-              `${BASE_PATH}/myportfolio/projects.png`,
-              `${BASE_PATH}/myportfolio/project.png`,
-            ]}
-          />
-          <p className="font-mono mb-2 mt-8 text-center">
-            This site&apos;s not just a portfolio — it&apos;s a whole vibe.
-          </p>
+          
         </div>
       );
     },
@@ -968,8 +894,8 @@ const projects: Project[] = [
     title: "Smart Parking Assistant",
     src: "/assets/projects-screenshots/smartparkingassitant/01.jpeg",
     screenshots: ["01.jpeg", "03.png"],
-    live: "https://github.com/Abhiz2411/smart-parking-assistant",
-    github:"https://github.com/Abhiz2411/smart-parking-assistant",
+    live:"",
+    github:"",
     skills: {
       frontend: [PROJECT_SKILLS.python],
       backend: [PROJECT_SKILLS.cplusplus, PROJECT_SKILLS.arduino],
@@ -989,7 +915,7 @@ const projects: Project[] = [
             images={[
               `${BASE_PATH}/smartparkingassitant/01.jpeg`,
               `${BASE_PATH}/smartparkingassitant/03.png`,
-              `${BASE_PATH}/smartparkingassitant/04.jpg`,
+             
             ]}
           />
         </div>
@@ -998,12 +924,12 @@ const projects: Project[] = [
   },
   { // 05. Smart Job Tracker project
     id: "smartjobtracker",
-    category: "Full stack",
-    title: "Smart Job Tracker",
-    src: "/assets/projects-screenshots/smartjobtracker/02.png",
-    screenshots: ["01.png", "02.png", "03.png","04.png","05.png","06.png","07.png"],
-    live: "https://job-tracker-application-eight.vercel.app/",
-    github:"https://github.com/Abhiz2411/Job-tracker-application",
+    category: "Client Work",
+    title: "KrishArts: Portfolio Website for a Freelance Artist",
+    src: "/assets/projects-screenshots/smartjobtracker/1.png",
+    screenshots: ["1.png", "2.png", "3.png","4.png"],
+    live: "https://tarungoel93.github.io/KrishArts/",
+    github:"https://github.com/TarunGoel93/KrishArts",
     skills: {
       frontend: [PROJECT_SKILLS.js, PROJECT_SKILLS.next, PROJECT_SKILLS.tailwind, PROJECT_SKILLS.vite],
       backend: [PROJECT_SKILLS.firebase],
@@ -1012,22 +938,15 @@ const projects: Project[] = [
       return (
         <div>
           <TypographyP className="font-mono ">
-            Track your job applications effortlessly with a sleek, dark-themed app that lets you 
-            manage, filter, and visualize your job search. Organize your applications with a 
-            Kanban board, monitor progress through status updates, and store everything securely. 
-            Enjoy seamless access across devices with a responsive design and email reminders for 
-            interviews. A smarter, more intuitive way to stay on top of your job hunt!
+            Developed a responsive portfolio website for a freelance artist to showcase their artwork online. The site was custom-designed to reflect the client’s creative style, with a clean layout, image gallery, and mobile-friendly interface. This was a paid freelance project, delivered end-to-end from design to deployment using HTML, CSS, and JavaScript.
           </TypographyP>
           <ProjectsLinks live={this.live} repo={this.github} />
           <SlideShow
             images={[
-              `${BASE_PATH}/smartjobtracker/01.png`,
-              `${BASE_PATH}/smartjobtracker/02.png`,
-              `${BASE_PATH}/smartjobtracker/03.png`,
-              `${BASE_PATH}/smartjobtracker/04.png`,
-              `${BASE_PATH}/smartjobtracker/05.png`,
-              `${BASE_PATH}/smartjobtracker/06.png`,
-              `${BASE_PATH}/smartjobtracker/07.png`,
+              `${BASE_PATH}/smartjobtracker/1.png`,
+              `${BASE_PATH}/smartjobtracker/2.png`,
+              `${BASE_PATH}/smartjobtracker/3.png`,
+              `${BASE_PATH}/smartjobtracker/4.png`,
             ]}
           />
         </div>
@@ -1036,39 +955,37 @@ const projects: Project[] = [
   },
   { // 06. Savinder Puri portfolio project
     id: "savinderpurisportfolio",
-    category: "Web Development",
-    title: "Savinder Puri Portfolio",
-    src: "/assets/projects-screenshots/savinderpuriportfolio/01.png",
-    screenshots: ["01.png", "02.png", "03.png","04.png","05.png"],
-    live: "https://savinder-puri.vercel.app/",
-    github:"https://github.com/Abhiz2411/savinder-puri",
+    category: "Themed Web Design",
+    title: "📜 The Wizard’s Portfolio",
+    src: "/assets/projects-screenshots/savinderpuriportfolio/1.png",
+    screenshots: ["1.png", "2.png", "3.png","4.png","5.png","6.png"],
+    live: "https://tarungoel93.github.io/Portfolio/",
+    github:"https://github.com/TarunGoel93/Portfolio",
     skills: {
-      frontend: [PROJECT_SKILLS.js, PROJECT_SKILLS.next, PROJECT_SKILLS.tailwind, PROJECT_SKILLS.vite],
+      frontend: [PROJECT_SKILLS.js, PROJECT_SKILLS.next, PROJECT_SKILLS.tailwind, PROJECT_SKILLS.html],
       backend: [],
     },
     get content() {
       return (
         <div>
           <TypographyP className="font-mono ">
-            Step into the digital world of Savinder Puri, the beloved DevOps guru and Spiritual 
-            Alchemist, with this responsive portfolio website. 🌐✨ Explore his inspiring journey, 
-            milestones, and life-changing services blending tech and spirituality. Built with 
-            modern tools like React and TypeScript, it’s a heartfelt tribute to a mentor who 
-            transforms lives. 💻🕊️ Crafted with ❤️ by Abhijit Zende! 🚀
+            Welcome to my enchanted portfolio — a magical blend of creativity and code, inspired by the wizarding world of Harry Potter. This site was crafted as a dark-themed, spellbound showcase of my technical journey, built to reflect both my passion for machine learning and my love for immersive design. Each section is styled like a chapter from a wizard’s spellbook, revealing my projects, skills, and achievements in a way that brings a little magic to modern technology.
           </TypographyP>
           <ProjectsLinks live={this.live} repo={this.github} />
           <SlideShow
             images={[
-              `${BASE_PATH}/savinderpuriportfolio/01.png`,
-              `${BASE_PATH}/savinderpuriportfolio/02.png`,
-              `${BASE_PATH}/savinderpuriportfolio/03.png`,
-              `${BASE_PATH}/savinderpuriportfolio/04.png`,
-              `${BASE_PATH}/savinderpuriportfolio/05.png`,
+              `${BASE_PATH}/savinderpuriportfolio/1.png`,
+              `${BASE_PATH}/savinderpuriportfolio/2.png`,
+              `${BASE_PATH}/savinderpuriportfolio/3.png`,
+              `${BASE_PATH}/savinderpuriportfolio/4.png`,
+              `${BASE_PATH}/savinderpuriportfolio/5.png`,
+              `${BASE_PATH}/savinderpuriportfolio/6.png`,
             ]}
           />
         </div>
       );
     },
   },
+  
 ];
 export default projects;
