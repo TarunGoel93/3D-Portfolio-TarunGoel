@@ -79,6 +79,20 @@ const HeroSection = () => {
                      AI/ML & Frontend Developer 
                   </p>
                 </BlurIn>
+
+                <BlurIn delay={1.4}>
+              <p
+            className={cn(
+          "md:self-start md:mt-2 font-thin text-md text-slate-500 dark:text-zinc-400 ml-3",
+          "cursor-default font-display sm:text-xl md:text-xl whitespace-normal bg-clip-text"
+       )}
+       >
+      B.Tech CSE (2nd year) @ K.R. Mangalam University | Focused on full-stack projects, AI/ML integration, and creative UI/UX.
+     </p>
+      </BlurIn>
+    
+
+
               </div>
               <div className="mt-8 md:ml-2 flex flex-col gap-3">
                 <Link

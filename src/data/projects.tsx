@@ -890,31 +890,28 @@ const projects: Project[] = [
   },
   { // 04. Smart parking assitant
     id: "smartparkingassitant",
-    category: "IoT",
-    title: "Smart Parking Assistant",
-    src: "/assets/projects-screenshots/smartparkingassitant/01.jpeg",
-    screenshots: ["01.jpeg", "03.png"],
-    live:"",
-    github:"",
+    category: "Themed Mobile Game",
+    title: "Three Charms in a Row: A Magical Tic Tac Toe Duel",
+    src: "/assets/projects-screenshots/smartparkingassitant/11.jpeg",
+    screenshots: ["1.jpeg", "3.jpeg", "2.jpeg"],
+    live:"https://drive.google.com/file/d/1MzmveNywK1T0XlWwMmsGbdEDkqvPuPyC/view?usp=sharing",
+    github:"https://github.com/TarunGoel93/tic-tac-toe-theme-based-",
     skills: {
-      frontend: [PROJECT_SKILLS.python],
-      backend: [PROJECT_SKILLS.cplusplus, PROJECT_SKILLS.arduino],
+      frontend: [PROJECT_SKILLS.html,PROJECT_SKILLS.bootstrap,PROJECT_SKILLS.js,PROJECT_SKILLS.next],
+      backend: [ PROJECT_SKILLS.node],
     },
     get content() {
       return (
         <div>
           <TypographyP className="font-mono ">
-            Transform parking with the Smart Parking Assistant, an IoT marvel powered by Arduino 
-            and IR sensors to detect and recommend the best spots in real-time. Enjoy a sleek GUI 
-            that visualizes availability and an intelligent system for quick, optimal decisions. 
-            Built to adapt with customizable hardware and Python-powered software for seamless 
-            integration. Say goodbye to parking woes and hello to smarter space utilization!
+            A Harry Potter–themed Tic Tac Toe game developed using HTML, CSS, JavaScript, and Node.js. Features multi-board gameplay, wizard avatars, and spell-casting symbols, delivering a fun and immersive mobile experience. The game was packaged into an APK and designed for Android devices.
           </TypographyP>
           <ProjectsLinks live={this.live} repo={this.github} />
           <SlideShow
             images={[
-              `${BASE_PATH}/smartparkingassitant/01.jpeg`,
-              `${BASE_PATH}/smartparkingassitant/03.png`,
+              `${BASE_PATH}/smartparkingassitant/1.jpeg`,
+              `${BASE_PATH}/smartparkingassitant/3.jpeg`,
+              `${BASE_PATH}/smartparkingassitant/2.jpeg`,
              
             ]}
           />
@@ -956,7 +953,7 @@ const projects: Project[] = [
   { // 06. Savinder Puri portfolio project
     id: "savinderpurisportfolio",
     category: "Themed Web Design",
-    title: "📜 The Wizard’s Portfolio",
+    title: "The Wizard’s Portfolio",
     src: "/assets/projects-screenshots/savinderpuriportfolio/1.png",
     screenshots: ["1.png", "2.png", "3.png","4.png","5.png","6.png"],
     live: "https://tarungoel93.github.io/Portfolio/",
